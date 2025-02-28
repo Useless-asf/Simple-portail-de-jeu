@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portail de mini-jeu</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+    </style>
+</head>
+<body>
+    <!--    Page d'acceuil    -->
+    <section id="menu" class="active-menu" >
+        <h1>Portail de jeux</h1>
+        <div class="game-cards">
+            <div class="game-card" data-game="morpion" >
+                <h3>Morpion</h3>
+            </div>
+            <div class="game-card" data-game="snake" >
+                <h3>Snake</h3>
+            </div>
+            <div class="game-card" data-game="chifoumi" >
+                <h3>Chifoumi</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--    Sections de jeu     -->
+    <section id="morpion" class="game-section">
+        <h2>Morpion</h2>
+        <div id="morpion-game" class="game-div"></div>
+    </section>
+
+    <section id="snake" class="game-section">
+        <h2>Snake</h2>
+        <div id="snake-game" class="game-div"></div>
+    </section>
+
+    <section id="chifoumi" class="game-section">
+        <h2>Chifoumi</h2>
+        <div id="chifoumi" class="game-div"></div>
+    </section>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
