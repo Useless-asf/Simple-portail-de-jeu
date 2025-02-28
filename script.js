@@ -25,6 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
 
+
+    //      Ajout des events de clicks sur les return-button pour retourner au menu 
+
     const returnButtons = document.querySelectorAll(".return-button");
 
     returnButtons.forEach(button => {
@@ -37,5 +40,21 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
 
+
+    //      Ajout les tiles du morpion
+
+    const morpion = document.getElementById("morpion-game");
+
+    for (let i=1; i<4; i++) {
+        for (let j=1; j<4; j++) {
+            const tile = document.createElement("div");
+            tile.classList.add("morpion-tile");
+            tile.dataset.tile = `${i} ${j}`;
+            morpion.appendChild(tile);
+            tile.addEventListener("click", (e) => {
+                console.log(tile.dataset.tile);
+            })
+        }
+    }
 
 })
