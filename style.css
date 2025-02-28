@@ -1,11 +1,10 @@
-.game-section {
-    display: none;
-}
+/*      HTML & BODY     */
 
 html {
     height: 90%;
     width: 90%;
     justify-self: center;
+    align-self: center;
 }
 
 body {
@@ -18,10 +17,11 @@ body {
     color: white;
 }
 
-h1 {
-    margin-top: 5vh;
-    font-size: 3rem;
-}
+
+
+
+/*      menu       */
+
 
 #menu {
     display: flex;
@@ -30,6 +30,11 @@ h1 {
     text-align: center;
     height: 100%;
     width: 100%;
+}
+
+#menu h1 {
+    margin-top: 5vh;
+    font-size: 3rem;
 }
 
 .game-cards {
@@ -54,9 +59,68 @@ h1 {
     height: 60%;
 }
 
+.game-card-tmp {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 15%;
+    border-color: white;
+    height: 60%;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 10rem;
+}
+
+
+
+
+/*      game-section    */
+
+.game-section {
+    display: none;
+}
+
+
+
+
+
+/*      game-section : morpion    */
+
+
+#morpion {
+
+    height: 100%;
+    width: 100%;
+
+    justify-content: center;
+}
+
+#morpion .return-button {
+    align-self: flex-end;
+}
+
+
+
+
+
+/*      game-card & game-card-tmp:hover     */
+
 .game-card:hover {
     box-shadow: 5px 5px rgba(200, 200, 200, 100);
 }
+
+.game-card-tmp:hover {
+    box-shadow: 5px 5px rgba(200, 200, 200, 100);
+
+}
+
+
+
+
+
+/*      POLICES     */
 
 .vt323-regular {
     font-family: "VT323", serif;
