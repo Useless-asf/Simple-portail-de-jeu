@@ -140,13 +140,10 @@ body {
 
 /*      game-card & game-card-tmp:hover     */
 
-.game-card:hover {
-    box-shadow: 5px 5px rgba(200, 200, 200, 100);
-}
-
+.game-card:hover,
 .game-card-tmp:hover {
     box-shadow: 5px 5px rgba(200, 200, 200, 100);
-
+    cursor: pointer;
 }
 
 
