@@ -107,9 +107,6 @@ body {
     justify-self: center;
 }
 
-#morpion .return-button {
-    justify-self: end;
-}
 
 #morpion-game {
     display: grid;
@@ -120,18 +117,41 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 
-    margin: 5vh 5vh 5vh 5vh;
+    margin: auto;
 
     border: 1vh solid black;
 
-    gap: 1vh;
+    gap: 0.5vh;
 
     background-color: white;
-
 }
 
 .morpion-tile {
     background-color: black;
+}
+
+
+/*      return-button       */
+
+.return-button {
+    justify-self: end;
+
+    background-color: black;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 42px 42px 42px 44px / 51px 51px 51px 51px;
+
+    height: 5%;
+
+    font-family: "VT323";
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.return-button:hover {
+    background-color: white;
+    color: black;
 }
 
 
